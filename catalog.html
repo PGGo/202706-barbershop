@@ -64,19 +64,13 @@
           <label for="american-crew">American crew</label>
 
           <h2>Группы товаров:</h2>
-          <!-- Или можно вместе? -->
-          <label>
-            <input type="radio" name="group-item" value="razor">
-            Бритвенные принадлежности
-          </label>
-          <label>
-            <input type="radio" name="group-item" value="care-products" checked>
-            Средства для ухода
-          </label>
-          <label>
-            <input type="radio" name="group-item" value="accessories">
-            Аксессуары
-          </label>
+          <input type="radio" name="group-item" value="razor" id="razor">
+          <label for="razor">Бритвенные принадлежности</label>
+          <input type="radio" name="group-item" value="care-products" id="care-products" checked>
+          <label for="are-products">Средства для ухода</label>
+          <input type="radio" name="group-item" value="accessories" id="accessories">
+          <label for="accessories">Аксессуары</label>
+
           <button class="btn" type="submit">Показать</button>
         </form>
       </div>
@@ -84,10 +78,8 @@
         <article class="products-item">
           <a href="#"><img src="" alt="Набор для путешествий &laquo;Baxter of California&raquo;" width="220" height="165"/></a>
           <p>
-            <!-- Нужно ли Baxter.. сразу писать заглавными или выделить в тег span и редактировать стилем? -->
-            <a href="#">Набор для путешествий &laquo;Baxter of California&raquo;</a>
+            <a href="#">Набор для путешествий <span class="products-item-name">&laquo;Baxter of California&raquo;<span></a>
           </p>
-          <!-- Надо ли цену и кнопку "купить" в один блок -->
           <div class="products-price">
             2900 руб.
           </div>
@@ -96,9 +88,8 @@
         <article class="products-item">
           <a href="#"><img src="" alt="Увлажняющий кондиционер &laquo;Baxter of California&raquo;" width="220" height="165"/></a>
           <p>
-            <a href="#">Увлажняющий кондиционер &laquo;Baxter of California&raquo;</a>
+            <a href="#">Увлажняющий кондиционер <span class="products-item-name">&laquo;Baxter of California&raquo;</span></a>
           </p>
-          <!-- Надо ли цену и кнопку "купить" в один блок -->
           <div class="products-price">
             750 руб.
           </div>
@@ -107,9 +98,8 @@
         <article class="products-item">
           <a href="#"><img src="" alt="Гель для волос &laquo;Suavecito&raquo;" width="220" height="165"/></a>
           <p>
-            <a href="#">Гель для волос &laquo;Suavecito&raquo;</a>
+            <a href="#">Гель для волос <span class="products-item-name">&laquo;Suavecito&raquo;</span></a>
           </p>
-          <!-- Надо ли цену и кнопку "купить" в один блок -->
           <div class="products-price">
             290 руб.
           </div>
@@ -118,9 +108,8 @@
         <article class="products-item">
           <a href="#"><img src="" alt="Глина для укладки волос &laquo;American Crew&raquo;" width="220" height="165"/></a>
           <p>
-            <a href="#">Глина для укладки волос &laquo;American Crew&raquo;</a>
+            <a href="#">Глина для укладки волос <span class="products-item-name">&laquo;American Crew&raquo;</span></a>
           </p>
-          <!-- Надо ли цену и кнопку "купить" в один блок -->
           <div class="products-price">
             500 руб.
           </div>
@@ -129,9 +118,8 @@
         <article class="products-item">
           <a href="#"><img src="" alt="Гель для волос &laquo;American Crew&raquo;" width="220" height="165"/></a>
           <p>
-            <a href="#">Гель для волос &laquo;American Crew&raquo;</a>
+            <a href="#">Гель для волос <span class="products-item-name">&laquo;American Crew&raquo;</span></a>
           </p>
-          <!-- Надо ли цену и кнопку "купить" в один блок -->
           <div class="products-price">
             300 руб.
           </div>
@@ -140,9 +128,8 @@
         <article class="products-item">
           <a href="#"><img src="" alt="Набор для бритья &laquo;Baxter of California&raquo;" width="220" height="165"/></a>
           <p>
-            <a href="#">Набор для бритья &laquo;Baxter of California&raquo;</a>
+            <a href="#">Набор для бритья <span class="products-item-name">&laquo;Baxter of California&raquo;</span></a>
           </p>
-          <!-- Надо ли цену и кнопку "купить" в один блок -->
           <div class="products-price">
             2900 руб.
           </div>
